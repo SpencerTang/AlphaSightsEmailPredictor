@@ -1,7 +1,7 @@
-Alphasights Email Predictor
+AlphaSights Email Predictor
 ============================
 
-Alphasights Email Predictor is a simple Ruby on Rails application that uses takes a first name, last name and domain name to generate email predictions.
+AlphaSights Email Predictor is a simple Ruby on Rails application that uses takes a first name, last name and domain name to generate email predictions.
 
 Setup
 =====
