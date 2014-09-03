@@ -26,6 +26,15 @@ RSpec.configure do |config|
   # instead of true.
   config.use_transactional_fixtures = true
 
+  config.before(:all) do
+  @email1 = {first_name: 'Peter', last_name: 'Wong', domain_name: 'alphasights.com'}
+  @email2 = {first_name: 'Craig', last_name: 'Silverstein', domain_name: 'google.com'}
+  @email3 = {first_name: 'Steve', last_name: 'Wozniak', domain_name: 'apple.com'}
+  @email4 = {first_name: 'Barack', last_name: 'Obama', domain_name: 'whitehouse.gov'}
+
+end
+
+
   # RSpec Rails can automatically mix in different behaviours to your tests
   # based on their file location, for example enabling you to call `get` and
   # `post` in specs under `spec/controllers`.
