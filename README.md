@@ -6,7 +6,7 @@ AlphaSights Email Predictor is a simple Ruby on Rails application that uses take
 Setup
 =====
 
-After forking and cloning this repository, run bundle install from the terminal to install any missing our out of date gems.
+After forking and cloning this repository, run <code> bundle install</code> from the terminal to install any missing our out of date gems.
 
 Testing
 ========
