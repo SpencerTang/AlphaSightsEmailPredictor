@@ -18,5 +18,7 @@ Front End
 
 This application uses Javascript to show users a form to enter email information. An AJAX call is used to send form params to the server and render the results in a modal. 
 
+Getting Start
+=============
 
-
+<img srce = "https://raw.githubusercontent.com/SpencerTang/AlphaSightsEmailPredictor/master/Screenshots/Alphasight%20ScreenShot%201.png">
