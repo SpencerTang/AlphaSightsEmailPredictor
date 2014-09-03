@@ -24,19 +24,17 @@ class AdvisorsController < ApplicationController
   # POST /advisors
   # POST /advisors.json
   def create
-    @advisor = Advisor.new(advisor_params)
 
-    respond_to do |format|
-      if @advisor.save
+    @advisor = Advisor.new
+    @mail = Advisor.predict_email(params["advisor"])
+
+      respond_to do |format|
         format.html { redirect_to @advisor, notice: 'Advisor was successfully created.' }
         format.json { render :show, status: :created, location: @advisor }
-      else
-        format.html { render :new }
-        format.json { render json: @advisor.errors, status: :unprocessable_entity }
+        format.js
       end
     end
-  end
-
+    
   # PATCH/PUT /advisors/1
   # PATCH/PUT /advisors/1.json
   def update
