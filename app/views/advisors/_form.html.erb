@@ -1,5 +1,5 @@
 <br><br><br><%= form_for(@advisor, :html => {:id => 'predictor'},remote: true) do |f| %>
-<h2> Please fill out the form below to recieve your predicted email. <br>(Domain name should only include the company or organization name e.g google.com would be entered as Google.)  </h2>
+<h2> Please fill out the form below to recieve your predicted email. <br>(Domain name should include the company or organization name e.g Google would be entered as google.com)   </h2>
 <% if @advisor.errors.any? %>
 <div id="error_explanation">
   <h2><%= pluralize(@advisor.errors.count, "error") %> prohibited this advisor from being saved:</h2>
