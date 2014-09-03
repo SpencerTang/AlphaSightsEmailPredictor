@@ -14,13 +14,8 @@ class AdvisorsController < ApplicationController
   end
 
   # GET /advisors/new
-  def new
-    @advisor = Advisor.new
-  end
 
   # GET /advisors/1/edit
-  def edit
-  end
 
   # POST /advisors
   # POST /advisors.json
