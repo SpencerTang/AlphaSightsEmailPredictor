@@ -1,31 +1,3 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Listing Advisors</h1>
+<%= render 'form' %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Domain name</th>
-      <th>First name</th>
-      <th>Last name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @advisors.each do |advisor| %>
-      <tr>
-        <td><%= advisor.domain_name %></td>
-        <td><%= advisor.first_name %></td>
-        <td><%= advisor.last_name %></td>
-        <td><%= link_to 'Show', advisor %></td>
-        <td><%= link_to 'Edit', edit_advisor_path(advisor) %></td>
-        <td><%= link_to 'Destroy', advisor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Advisor', new_advisor_path %>

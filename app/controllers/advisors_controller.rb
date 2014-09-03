@@ -5,6 +5,7 @@ class AdvisorsController < ApplicationController
   # GET /advisors.json
   def index
     @advisors = Advisor.all
+    @advisor = Advisor.new
   end
 
   # GET /advisors/1
@@ -34,7 +35,7 @@ class AdvisorsController < ApplicationController
         format.js
       end
     end
-    
+
   # PATCH/PUT /advisors/1
   # PATCH/PUT /advisors/1.json
   def update

@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  only: [:index, :new, :create]
+  resources :advisors, only: [:index, :new, :create]
+
+  get '/', to: 'advisors#index'
 
 
 
