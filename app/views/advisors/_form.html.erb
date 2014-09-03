@@ -1,29 +1,27 @@
-<%= form_for(@advisor) do |f| %>
-  <% if @advisor.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@advisor.errors.count, "error") %> prohibited this advisor from being saved:</h2>
-
-      <ul>
-      <% @advisor.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :domain_name %><br>
-    <%= f.text_field :domain_name %>
-  </div>
-  <div class="field">
-    <%= f.label :first_name %><br>
-    <%= f.text_field :first_name %>
-  </div>
-  <div class="field">
-    <%= f.label :last_name %><br>
-    <%= f.text_field :last_name %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<br><br><br><%= form_for(@advisor, :html => {:id => 'predictor'},remote: true) do |f| %>
+<h2> Please fill out the form below to recieve your predicted email. <br>(Domain name should only include the company or organization name e.g google.com would be entered as Google.)  </h2>
+<% if @advisor.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@advisor.errors.count, "error") %> prohibited this advisor from being saved:</h2>
+  <ul>
+    <% @advisor.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+<div class="field ">
+  <br>
+  <%= f.text_field :first_name, :placeholder => "First Name", :class => "email-form", :required => true %>
+</div>
+<div class="field">
+  
+  <%= f.text_field :last_name, :placeholder => "Last Name", :class => "email-form", :required => true %>
+</div>
+<div class="field">
+  <%= f.text_field :domain_name, :placeholder => "Domain name", :class => "email-form", :required => true  %>
+</div>
+<div class="actions">
+  <%= f.submit :submit,:remote => true,:class => "main-button", :value => "Predict email", :required => true %>
+</div>
 <% end %>

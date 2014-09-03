@@ -1,14 +1,136 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>AlphaSights</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>Advisorconnect</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id='blockhead'>
+      <div class='container'>
+        <div class='silver-gradient clearfix' id='user-controls'>
+          <div class='wrapper'>
+            <div class='controls pull-right'>
+              <ul class='plain-list horizontal-list'>
+                <li><a class="language-picker" href="#">English</a></li>
+                <li class='separated'><a class="login" href="https://secure.alphasights.com/c/compliance_users/sign_in">Compliance Portal</a></li>
+                <li class='separated'><a class="login" href="https://clients.alphasights.com/">Client Portal</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class='container' style='position: relative;'>
+          <div class='banner home'>
+            <header class='overlay'>
+              <div class='wrapper clearfix'>
+                <a href="https://www.alphasights.com/"><div class='logo pull-left'>
+                </div>
+              </a><nav class='main pull-right'>
+              <ul class='navbar horizontal-list clearfix js-main-nav'>
+                <li class='home'><a href="https://www.alphasights.com/">Home</a></li>
+                <li class='what-we-do'><a href="https://www.alphasights.com/what-we-do/overview">What we do</a></li>
+                <li class='about-us'><a href="https://www.alphasights.com/about-us/overview">About us</a></li>
+                <li class='careers'><a href="https://www.alphasights.com/careers/overview">Careers</a></li>
+                <li class='contact-us'><a href="https://www.alphasights.com/contact/new-york">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <div class='wrapper' id='masthead'>
+          <div class='fourteen-col vertical'>
+            <div class='vertical-content '>
+              
+              <%= yield %>
+              <h1 class = "intro-text">A new type of email predictor.</h1>
+              <h2 class='prefix-two ten-col suffix-two intro-text'>
+              We don't claim to possess the e-mail you need in-house.
+              <br>
+              But we can predict it, if it is either a Google, Apple or Alphasights email.
+              </h2>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <a id = "start-prediction" class="main-button js-request-trial-button intro-text" >Let's get started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='desktop_only video-wrapper'>
+        <video class='autoplay-video js-video'autoplay loop poster ="//d6bozqt4bp55m.cloudfront.net/assets/mastheads/home_video-58c88a0689986ef315f924b2cc013e82.jpg" style='width: 100%;'>
+          <source src='//player.vimeo.com/external/70862177.hd.mp4?s=b276f8461f813aa5b4cfc7d2cb84edf4' type='video/mp4'>
+          <source src='//d6bozqt4bp55m.cloudfront.needt/batnut-production/AlphaSights.webm' type='video/webm'>
+        </video>
+      </div>
+    </div>
+  </div>
+  <div class='container'>
+    <div class='sub-nav-placeholder js-sub-nav-placeholder'></div>
+    <div class='clear js-sub-nav-container snow sub-nav-root-container'>
+      <div class='sub-nav-wrapper centered' id='subnav'>
+        <a class="mini-logo js-mini-logo" ></a>
+        <nav class='sub-nav-container'>
+          <div class='about-us-sub-nav centered clearfix outlined sub-nav'>
+            <a class="sub-nav-active one-third " href="/about-us/overview">Overview</a>
+            <a class=" one-third " href="/about-us/our-beliefs">Our Beliefs</a>
+            <a class=" one-third " href="/about-us/recognition-and-awards">Recognition and Awards</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <section class='main-content body-background'>
+      <div class='wrapper clearfix'>
+        <div class='container main-section rounded'>
+          <div class='eight-col prefix-one content with-bottom-drawer'>
+            <h2 class='section-header'>Building a world class firm that inspires and develops the business leaders of tomorrow</h2>
+            <p class='body-copy'>In 2008, we set out with a clear-cut value proposition: to provide today’s business leaders with fast, flexible access to deep industry knowledge worldwide.  Launching into a competitive field, we knew that our ability to excel would result from nothing else but the intelligence, determination and drive of our people. From Day 1, we focused on building a world-class firm that would attract the best and brightest talent in the market.</p>
+            <div class='three-col top-spacing'>
+              <a href='http://www.linkedin.com/in/maxcartellieri' target='_blank'>
+                <img alt="Max" src="//d6bozqt4bp55m.cloudfront.net/assets/people/max-01147cc7dc0f5a751c47d524baf72a03.jpg" />
+              </a>
+              <div class='quadruple-top-spacing'>
+                <a href='http://uk.linkedin.com/in/heathandrew' target='_blank'>
+                  <img alt="Andrew" src="//d6bozqt4bp55m.cloudfront.net/assets/people/andrew-608cbc4e0ce7751e5d944f00b99de52e.jpg" />
+                </a>
+              </div>
+            </div>
+            <div class='five-col last-col'>
+              <p class='body-copy'>Today, we rank amongst the fastest-growing information services firms in the world: operating from four hubs in the US, Europe, the Middle East and Asia, our 250+ professionals help thousands of the world’s leading business professionals ramp up fast on unfamiliar topics, arrive at better decisions and execute projects more effectively.</p>
+              <p class='body-copy'>
+              <br>
+              At the same time, we have become a top career option for the best graduates and early-stage professionals worldwide, with over a hundred open positions being filled annually.
+              </p>
+              <p class='body-copy'>
+              <br>
+              We are committed to investing what it takes – in our all-star team, our systems and processes – to help our clients stay at the top of their game and and to build a world-class firm that inspires and develops the business leaders of tomorrow.
+              </p>
+            </div>
+          </div>
+          <div class='four-col prefix-one sidebar last-col absorbs-container-borders'>
+            <div class='padded-content triple-bottom-spacing'>
+              <h3 class='main-heading double-bottom-spacing'>AlphaSights at a glance</h3>
+              <h2 class='sidebar-gamma-header'>Year Founded</h2>
+              <p class='muted short-explanation'>2008</p>
+              <h2 class='sidebar-gamma-header'>Firm Size</h2>
+              <p class='muted short-explanation'>>250 professionals</p>
+              <h2 class='sidebar-gamma-header'>Mission</h2>
+              <p class='muted short-explanation'>Helping today’s business leaders succeed, and building a world-class firm that inspires and develops the business leaders of tomorrow</p>
+              <h2 class='sidebar-gamma-header'>Industry</h2>
+              <p class='muted short-explanation'>Information Services</p>
+              <h2 class='sidebar-gamma-header'>Core Service</h2>
+              <p class='muted short-explanation'>Providing today’s business leaders with fast, flexible access to deep industry knowledge worldwide</p>
+              <h2 class='sidebar-gamma-header'>Clients</h2>
+              <p class='muted short-explanation'>Leading professionals worldwide – across investment management, private equity, corporates and professional services firms</p>
+              <h2 class='sidebar-gamma-header'>Offices</h2>
+              <p class='muted short-explanation'>New York, London, Dubai, Hong Kong</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
