@@ -1,0 +1,33 @@
+ $('#advisor_domain_name').val("");
+ $('#advisor_first_name').val("");
+ $('#advisor_last_name').val("");
+
+ var email = "<%= j @mail[0] %>";
+ var email2 = "<%= j @mail[1] %>";
+
+ $('#emailModal').modal('show');
+
+ if (email2 === '') {
+  $('#success').show()
+  $('#fail').hide()
+  $('.modal-body p').html("Your predicted email is <a href = 'mailto:" + email + "'>" + email + 
+   "</a> <br> Click on the email link to start emailing!");
+ }
+
+ if (email2 != ''){
+    $('#success').show()
+    $('#fail').hide()
+    $('.modal-body p').html("Your predicted email has two results:<br><br>  <a href = 'mailto:" + email + "'>" + email + 
+   "</a><br><br><a href = 'mailto:" + email2 + "'>" + email2 + 
+   "</a> <br><br> Click on either email link to start emailing!");
+ }
+
+ if (email === ''){
+    $('#success').hide()
+    $('#fail').show()
+    $('.modal-body p').html("We apologize, no prediction can accurately be made. Please try another domain name");
+ }
+
+
+
+
