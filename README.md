@@ -20,5 +20,6 @@ This application uses Javascript to show users a form to enter email information
 
 Getting Start
 =============
-
+''''''
 <img srce = "https://raw.githubusercontent.com/SpencerTang/AlphaSightsEmailPredictor/master/Screenshots/Alphasight%20ScreenShot%201.png">
+''''
