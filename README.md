@@ -20,6 +20,13 @@ This application uses Javascript to show users a form to enter email information
 
 Getting Started
 =============
+
+Once you have bundled and all your gems are up to date run "rails s" in your terminal and open up your browser of choice. Once you are in your browser enter "localhost:3000" in the address bar.
+
+When the page has loaded you will see a short description of the application and a "Let's get started" button. Press the button to precede.
+
 ![alt tag](https://raw.githubusercontent.com/SpencerTang/AlphaSightsEmailPredictor/master/Screenshots/Alphasight%20ScreenShot%201.png)
+
+Once the form has displayed you can enter a first name, last name and domain name to generate an email.
 
 ![alt tag](https://raw.githubusercontent.com/SpencerTang/AlphaSightsEmailPredictor/master/Screenshots/Alphasight%20Screenshot%202.png)
