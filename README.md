@@ -11,7 +11,7 @@ After forking and cloning this repository, run <code> bundle install</code> and 
 Testing
 ========
 
-A basic model test is included, using RSpec. To run the test suite, type rspec from the project's root directory.
+A basic model test is included, using RSpec. To run the test suite, type <code>rspec</code> from the project's root directory.
 
 Front End
 ==========
