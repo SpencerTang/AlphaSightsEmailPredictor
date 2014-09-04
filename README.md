@@ -23,7 +23,7 @@ Getting Started
 
 Once you have bundled and all your gems are up to date run <code>rails s</code> in your terminal and open up your browser of choice. Once you are in your browser enter "localhost:3000" in the address bar.
 
-When the page has loaded you will see a short description of the application and a "Let's get started" button. Press the button to precede.
+When the page has loaded you will see a short description of the application and a "Let's get started" button. Press the button to proceed.
 
 ![alt tag](https://raw.githubusercontent.com/SpencerTang/AlphaSightsEmailPredictor/master/Screenshots/Alphasight%20ScreenShot%201.png)
 
